@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "My New Tab Extension",
+  "version": "1.0.0",
+  "description": "A custom new tab built with Vite + React",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

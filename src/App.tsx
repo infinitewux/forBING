@@ -23,6 +23,9 @@ const QUERIES: string[] = [
   '最新 科技 动态',
   '随机健身 动作',
   '创意点子 列表',
+  'chatgpt 介绍',
+  'gemini',
+  'deepseek'
 ];
 
 function pickRandom<T>(arr: T[]): T {
@@ -79,9 +82,14 @@ export default function App() {
         {/* Hidden Bing search form */}
         <form ref={formRef} action="https://cn.bing.com/search" method="GET" target="_self" style={{ display: 'none' }}>
           <input type="hidden" name="q" value={query} />
-          <input type="hidden" name="form" value="ANSPH1" />
-          <input type="hidden" name="refig" value="689b5f555e8c42388bdd17b8f121b368" />
-          <input type="hidden" name="pc" value="U531" />
+          <input type="hidden" name="form" value="QBLH" />
+          <input type="hidden" name="sp" value="-1" />
+          <input type="hidden" name="lq" value="0" />
+          <input type="hidden" name="pq" value={query} />
+          <input type="hidden" name="sc" value="12-2" />
+          <input type="hidden" name="qs" value="n" />
+          <input type="hidden" name="sk" value="" />
+          <input type="hidden" name="cvid" value="2B1D1DAD83A24C30A8F731DE0E3499F1" />
         </form>
 
         <footer className="mt-6 text-xs text-gray-500">提示：把这个页面 URL 设置为浏览器的新标签页或使用扩展覆盖 newtab 即可。</footer>
